@@ -20,7 +20,7 @@ public class Pawsy
     MessageCacheSize = 100,
     LogLevel = LogSeverity.Info,
     AlwaysDownloadUsers = true,
-    GatewayIntents = GatewayIntents.AllUnprivileged | GatewayIntents.MessageContent | GatewayIntents.GuildMembers & ~GatewayIntents.GuildInvites & ~GatewayIntents.GuildScheduledEvents,
+    GatewayIntents = GatewayIntents.AllUnprivileged | GatewayIntents.MessageContent & ~GatewayIntents.GuildInvites & ~GatewayIntents.GuildScheduledEvents,
   });
   public ulong ID { get => PawsyID; }
   public string Name { get; } = "Pawsy";
